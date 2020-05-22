@@ -40,14 +40,14 @@ export class AppMenuComponent implements OnInit {
             {
                 label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['/components'],
                 items: [
-                    { label: 'Purpose', icon: 'pi pi-fw pi-th-large', routerLink: ['/components/sample']},
-                    { label: 'History', icon: 'pi pi-fw pi-file', routerLink: ['/components/forms'] },
-                    { label: 'Achievement', icon: 'pi pi-fw pi-table', routerLink: ['/components/data'] },
-                    { label: 'Staff', icon: 'pi pi-fw pi-list', routerLink: ['/components/panels'] },
-                    { label: 'Annual Summary', icon: 'pi pi-fw pi-clone', routerLink: ['/components/overlays'],
+                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['/components/sample']},
+                    { label: 'History', icon: 'pi pi-list', routerLink: ['/components/forms'] },
+                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['/components/data'] },
+                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['/components/panels'] },
+                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['/components/overlays'],
                         items: [
-                            { label: '2016/2017', icon: 'pi pi-fw pi-plus', routerLink: ['/components/menus'] },
-                            { label: '2018/2019', icon: 'pi pi-fw pi-envelope', routerLink: ['/components/messages'] }
+                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['/components/menus'] },
+                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['/components/messages'] }
                         ]
                     }
                 ]
