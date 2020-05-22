@@ -36,84 +36,113 @@ export class AppMenuComponent implements OnInit {
 
     ngOnInit() {
         this.model = [
-            { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/']},
+            { label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/']},
             {
-                label: 'Components', icon: 'pi pi-fw pi-star', routerLink: ['/components'],
+                label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['/components'],
                 items: [
-                    { label: 'Sample Page', icon: 'pi pi-fw pi-th-large', routerLink: ['/components/sample']},
-                    { label: 'Forms', icon: 'pi pi-fw pi-file', routerLink: ['/components/forms'] },
-                    { label: 'Data', icon: 'pi pi-fw pi-table', routerLink: ['/components/data'] },
-                    { label: 'Panels', icon: 'pi pi-fw pi-list', routerLink: ['/components/panels'] },
-                    { label: 'Overlays', icon: 'pi pi-fw pi-clone', routerLink: ['/components/overlays'] },
-                    { label: 'Menus', icon: 'pi pi-fw pi-plus', routerLink: ['/components/menus'] },
-                    { label: 'Messages', icon: 'pi pi-fw pi-envelope', routerLink: ['/components/messages'] },
-                    { label: 'Charts', icon: 'pi pi-fw pi-chart-bar', routerLink: ['/components/charts'] },
-                    { label: 'File', icon: 'pi pi-fw pi-upload', routerLink: ['/components/file'] },
-                    { label: 'Misc', icon: 'pi pi-fw pi-spinner', routerLink: ['/components/misc'] }
-                ]
-            },
-            {
-                label: 'Pages', icon: 'pi pi-fw pi-copy', routerLink: ['/pages'],
-                items: [
-                    { label: 'Empty', icon: 'pi pi-fw pi-clone', routerLink: ['/pages/empty'] },
-                    { label: 'Login', icon: 'pi pi-fw pi-sign-in', routerLink: ['/login'], target: '_blank' },
-                    { label: 'Landing', icon: 'pi pi-fw pi-globe', url: 'assets/pages/landing.html', target: '_blank' },
-                    { label: 'Error', icon: 'pi pi-fw pi-exclamation-triangle', routerLink: ['/error'], target: '_blank' },
-                    { label: '404', icon: 'pi pi-fw pi-times', routerLink: ['/404'], target: '_blank' },
-                    {
-                        label: 'Access Denied', icon: 'pi pi-fw pi-ban',
-                        routerLink: ['/accessdenied'], target: '_blank'
-                    }
-                ]
-            },
-            {
-                label: 'Hierarchy', icon: 'pi pi-fw pi-sitemap',
-                items: [
-                    {
-                        label: 'Submenu 1', icon: 'pi pi-fw pi-sign-in',
+                    { label: 'Purpose', icon: 'pi pi-fw pi-th-large', routerLink: ['/components/sample']},
+                    { label: 'History', icon: 'pi pi-fw pi-file', routerLink: ['/components/forms'] },
+                    { label: 'Achievement', icon: 'pi pi-fw pi-table', routerLink: ['/components/data'] },
+                    { label: 'Staff', icon: 'pi pi-fw pi-list', routerLink: ['/components/panels'] },
+                    { label: 'Annual Summary', icon: 'pi pi-fw pi-clone', routerLink: ['/components/overlays'],
                         items: [
-                            {
-                                label: 'Submenu 1.1', icon: 'pi pi-fw pi-sign-in',
-                                items: [
-                                    { label: 'Submenu 1.1.1', icon: 'pi pi-fw pi-sign-in' },
-                                    { label: 'Submenu 1.1.2', icon: 'pi pi-fw pi-sign-in' },
-                                    { label: 'Submenu 1.1.3', icon: 'pi pi-fw pi-sign-in' },
-                                ]
-                            },
-                            {
-                                label: 'Submenu 1.2', icon: 'pi pi-fw pi-sign-in',
-                                items: [
-                                    { label: 'Submenu 1.2.1', icon: 'pi pi-fw pi-sign-in' }
-                                ]
-                            },
-                        ]
-                    },
-                    {
-                        label: 'Submenu 2', icon: 'pi pi-fw pi-sign-in',
-                        items: [
-                            {
-                                label: 'Submenu 2.1', icon: 'pi pi-fw pi-sign-in',
-                                items: [
-                                    { label: 'Submenu 2.1.1', icon: 'pi pi-fw pi-sign-in' },
-                                    { label: 'Submenu 2.1.2', icon: 'pi pi-fw pi-sign-in' },
-                                ]
-                            },
-                            {
-                                label: 'Submenu 2.2', icon: 'pi pi-fw pi-sign-in',
-                                items: [
-                                    { label: 'Submenu 2.2.1', icon: 'pi pi-fw pi-sign-in' },
-                                ]
-                            },
+                            { label: '2016/2017', icon: 'pi pi-fw pi-plus', routerLink: ['/components/menus'] },
+                            { label: '2018/2019', icon: 'pi pi-fw pi-envelope', routerLink: ['/components/messages'] }
                         ]
                     }
                 ]
             },
-            {
-                label: 'Docs', icon: 'pi pi-fw pi-file', routerLink: ['/documentation']
-            },
-            {
-                label: 'Buy Now', icon: 'pi pi-fw pi-money-bill', url: ['https://www.primefaces.org/store']
-            }
+            { label: 'FAQs', icon: 'pi pi-question', routerLink: ['/']},
+            { label: 'Asylum Seeker Advocacy & GP Clinics', icon: 'pi pi-heart', routerLink: ['/']}, 
+            { label: 'Refugee Health Nurse Program', icon: 'pi pi-plus-circle', routerLink: ['/']}, 
+            { label: 'Disability Support Team', icon: 'pi pi-users', routerLink: ['/']}, 
+            { label: 'Communications Health Information', icon: 'pi pi-comment', routerLink: ['/']}, 
+            { label: 'Education & Training', icon: 'pi pi-pencil', routerLink: ['/']}, 
+            { label: 'Projects', icon: 'pi pi-cog', routerLink: ['/']}, 
+            { label: 'Resources', icon: 'pi pi-globe', routerLink: ['/']}, 
+            { label: 'GP Information', icon: 'pi pi-info-circle', routerLink: ['/']}, 
+            { label: 'Refugee Health Networks', icon: 'pi pi-plus-circle', routerLink: ['/']}, 
+            { label: 'Placements, Employment, Volunteering', icon: 'pi pi-user-edit', routerLink: ['/']}, 
+            { label: 'Links', icon: 'pi pi-share-alt', routerLink: ['/']}, 
+            { label: 'Contact Us', icon: 'pi pi-comments', routerLink: ['/']}, 
+            // { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/']},
+            // {
+            //     label: 'Components', icon: 'pi pi-fw pi-star', routerLink: ['/components'],
+            //     items: [
+            //         { label: 'Sample Page', icon: 'pi pi-fw pi-th-large', routerLink: ['/components/sample']},
+            //         { label: 'Forms', icon: 'pi pi-fw pi-file', routerLink: ['/components/forms'] },
+            //         { label: 'Data', icon: 'pi pi-fw pi-table', routerLink: ['/components/data'] },
+            //         { label: 'Panels', icon: 'pi pi-fw pi-list', routerLink: ['/components/panels'] },
+            //         { label: 'Overlays', icon: 'pi pi-fw pi-clone', routerLink: ['/components/overlays'] },
+            //         { label: 'Menus', icon: 'pi pi-fw pi-plus', routerLink: ['/components/menus'] },
+            //         { label: 'Messages', icon: 'pi pi-fw pi-envelope', routerLink: ['/components/messages'] },
+            //         { label: 'Charts', icon: 'pi pi-fw pi-chart-bar', routerLink: ['/components/charts'] },
+            //         { label: 'File', icon: 'pi pi-fw pi-upload', routerLink: ['/components/file'] },
+            //         { label: 'Misc', icon: 'pi pi-fw pi-spinner', routerLink: ['/components/misc'] }
+            //     ]
+            // },
+            // {
+            //     label: 'Pages', icon: 'pi pi-fw pi-copy', routerLink: ['/pages'],
+            //     items: [
+            //         { label: 'Empty', icon: 'pi pi-fw pi-clone', routerLink: ['/pages/empty'] },
+            //         { label: 'Login', icon: 'pi pi-fw pi-sign-in', routerLink: ['/login'], target: '_blank' },
+            //         { label: 'Landing', icon: 'pi pi-fw pi-globe', url: 'assets/pages/landing.html', target: '_blank' },
+            //         { label: 'Error', icon: 'pi pi-fw pi-exclamation-triangle', routerLink: ['/error'], target: '_blank' },
+            //         { label: '404', icon: 'pi pi-fw pi-times', routerLink: ['/404'], target: '_blank' },
+            //         {
+            //             label: 'Access Denied', icon: 'pi pi-fw pi-ban',
+            //             routerLink: ['/accessdenied'], target: '_blank'
+            //         }
+            //     ]
+            // },
+            // {
+            //     label: 'Hierarchy', icon: 'pi pi-fw pi-sitemap',
+            //     items: [
+            //         {
+            //             label: 'Submenu 1', icon: 'pi pi-fw pi-sign-in',
+            //             items: [
+            //                 {
+            //                     label: 'Submenu 1.1', icon: 'pi pi-fw pi-sign-in',
+            //                     items: [
+            //                         { label: 'Submenu 1.1.1', icon: 'pi pi-fw pi-sign-in' },
+            //                         { label: 'Submenu 1.1.2', icon: 'pi pi-fw pi-sign-in' },
+            //                         { label: 'Submenu 1.1.3', icon: 'pi pi-fw pi-sign-in' },
+            //                     ]
+            //                 },
+            //                 {
+            //                     label: 'Submenu 1.2', icon: 'pi pi-fw pi-sign-in',
+            //                     items: [
+            //                         { label: 'Submenu 1.2.1', icon: 'pi pi-fw pi-sign-in' }
+            //                     ]
+            //                 },
+            //             ]
+            //         },
+            //         {
+            //             label: 'Submenu 2', icon: 'pi pi-fw pi-sign-in',
+            //             items: [
+            //                 {
+            //                     label: 'Submenu 2.1', icon: 'pi pi-fw pi-sign-in',
+            //                     items: [
+            //                         { label: 'Submenu 2.1.1', icon: 'pi pi-fw pi-sign-in' },
+            //                         { label: 'Submenu 2.1.2', icon: 'pi pi-fw pi-sign-in' },
+            //                     ]
+            //                 },
+            //                 {
+            //                     label: 'Submenu 2.2', icon: 'pi pi-fw pi-sign-in',
+            //                     items: [
+            //                         { label: 'Submenu 2.2.1', icon: 'pi pi-fw pi-sign-in' },
+            //                     ]
+            //                 },
+            //             ]
+            //         }
+            //     ]
+            // },
+            // {
+            //     label: 'Docs', icon: 'pi pi-fw pi-file', routerLink: ['/documentation']
+            // },
+            // {
+            //     label: 'Buy Now', icon: 'pi pi-fw pi-money-bill', url: ['https://www.primefaces.org/store']
+            // }
         ];
         this.inlineModel = [
             {

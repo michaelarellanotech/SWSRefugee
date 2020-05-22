@@ -103,6 +103,7 @@ import { CountryService } from './demo/service/countryservice';
 import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
 import { MenuService } from './app.menu.service';
+import { HomeComponent } from './staticpages/home.component';
 
 @NgModule({
     imports: [
@@ -203,7 +204,9 @@ import { MenuService } from './app.menu.service';
         AppNotfoundComponent,
         AppErrorComponent,
         AppAccessdeniedComponent,
-        AppLoginComponent
+        AppLoginComponent,
+
+        HomeComponent
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

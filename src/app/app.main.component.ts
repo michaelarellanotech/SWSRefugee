@@ -6,7 +6,8 @@ import { MenuService } from './app.menu.service';
     templateUrl: './app.main.component.html',
 })
 export class AppMainComponent {
-    menuMode = 'slim';
+    menuMode = 'static';
+    //menuMode = 'horizontal';
 
     overlayMenuActive: boolean;
 
@@ -18,7 +19,7 @@ export class AppMainComponent {
 
     lightMenu = true;
 
-    topbarColor = 'layout-topbar-blue';
+    topbarColor = 'layout-topbar-pink';
 
     menuClick: boolean;
 

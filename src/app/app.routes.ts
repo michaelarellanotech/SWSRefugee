@@ -18,11 +18,13 @@ import { AppNotfoundComponent } from './pages/app.notfound.component';
 import { AppErrorComponent } from './pages/app.error.component';
 import { AppAccessdeniedComponent } from './pages/app.accessdenied.component';
 import { AppLoginComponent } from './pages/app.login.component';
+import { HomeComponent } from './staticpages/home.component';
 
 export const routes: Routes = [
     { path: '', component: AppMainComponent,
         children: [
-            { path: '', component: DashboardDemoComponent },
+            { path: '', component: HomeComponent },
+            // { path: '', component: DashboardDemoComponent },
             { path: 'components/sample', component: SampleDemoComponent },
             { path: 'components/forms', component: FormsDemoComponent },
             { path: 'components/data', component: DataDemoComponent },

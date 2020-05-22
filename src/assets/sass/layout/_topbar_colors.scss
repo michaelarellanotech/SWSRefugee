@@ -597,35 +597,78 @@
         }
     }
 
+    // &.layout-topbar-pink {
+    //     .layout-topbar {
+            
+    //         //background-color: #BF275B;
+    //         background-color: #AD174F;
+
+    //         .layout-topbar-icon {
+    //             color: #ffffff;
+
+    //             &:hover {
+    //                 background-color: lighten(#6E072A, 5%);
+    //             }
+    //         }
+
+    //         .layout-topbar-search {
+    //             //background-color: #BF275B;
+    //             background-color: #AD174F;
+
+    //             input {
+    //                 //background-color: #BF275B;
+    //                 background-color: #AD174F;
+    //                 color: #ffffff;
+    //                 @include input-placeholder(#FFDAE6);
+    //             }
+
+    //             i {
+    //                 color: #FFDAE6;
+    //             }
+    //         }
+
+    //         .user-profile {
+    //             .layout-profile-name, .layout-profile-role, .layout-profile-icon {
+    //                 color: #FFDAE6;
+    //             }
+
+    //             a:hover {
+    //                 .layout-profile-name, .layout-profile-role, .layout-profile-icon {
+    //                     color: #ffffff;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     &.layout-topbar-pink {
         .layout-topbar {
-            background-color: #BF275B;
+            background-color: #0772B3;
 
             .layout-topbar-icon {
                 color: #ffffff;
 
                 &:hover {
-                    background-color: lighten(#6E072A, 5%);
+                    background-color: #054e7a;
                 }
             }
 
             .layout-topbar-search {
-                background-color: #BF275B;
+                background-color: #0772B3;
 
                 input {
-                    background-color: #BF275B;
+                    background-color: #0772B3;
                     color: #ffffff;
-                    @include input-placeholder(#FFDAE6);
+                    @include input-placeholder(#E0FFFB);
                 }
 
                 i {
-                    color: #FFDAE6;
+                    color: #E0FFFB;
                 }
             }
 
             .user-profile {
                 .layout-profile-name, .layout-profile-role, .layout-profile-icon {
-                    color: #FFDAE6;
+                    color: #E0FFFB;
                 }
 
                 a:hover {
